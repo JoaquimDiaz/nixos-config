@@ -1,3 +1,6 @@
 [submodule "config/dwm"]
 	path = config/dwm
 	url = git@github.com:JoaquimDiaz/dwm.git
+[submodule "config/dmenu"]
+	path = config/dmenu
+	url = git@github.com:JoaquimDiaz/dmenu.git
