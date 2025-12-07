@@ -7,3 +7,6 @@
 [submodule "config/nvim"]
 	path = config/nvim
 	url = git@github.com:JoaquimDiaz/nvim.git
+[submodule "config/slock"]
+	path = config/slock
+	url = git@github.com:JoaquimDiaz/slock.git
