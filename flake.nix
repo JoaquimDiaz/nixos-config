@@ -54,7 +54,12 @@
       nixosConfigurations = {
         nixos-rog = makeSystem {
           hostName = "nixos-rog";
-	  system = "x86_64-linux";
+	      system = "x86_64-linux";
+          timeZone = "Europe/Paris";
+        };
+        nixos-tkpd = makeSystem {
+          hostName = "nixos-tkpd";
+	      system = "x86_64-linux";
           timeZone = "Europe/Paris";
         };
       };

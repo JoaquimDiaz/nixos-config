@@ -7,8 +7,8 @@ in
   programs.bash = {
     enable = true;
     shellAliases = {
-      nrs = "sudo nixos-rebuild switch --flake ${configDir}#${laptop}";
-      nrs-vm = "sudo nixos-rebuild build-vm --flake ${configDir}#${laptop}";
+      nrs = "sudo nixos-rebuild switch --flake ${configDir}?submodules=1#${laptop}";
+      nrs-vm = "sudo nixos-rebuild build-vm --flake ${configDir}?submodules=1#${laptop}";
       hmb = "home-manager -f ${configDir}/home.nix switch";
       btw = "echo i use nixos, btw";
       # fzf aliases

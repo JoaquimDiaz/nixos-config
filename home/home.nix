@@ -39,7 +39,7 @@ in
     settings = {
       user.name = "Joaquim Diaz";
       user.email = "diazjoaquim@gmail.com";
-      core.editor = "vim";
+      core.editor = "nvim";
     };
   };
 
