@@ -4,3 +4,6 @@
 [submodule "config/dmenu"]
 	path = config/dmenu
 	url = git@github.com:JoaquimDiaz/dmenu.git
+[submodule "config/nvim"]
+	path = config/nvim
+	url = git@github.com:JoaquimDiaz/nvim.git
