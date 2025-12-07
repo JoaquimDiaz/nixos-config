@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+#------------------------------------------------------#
+# Script for saving the current image in the clipboard #
+# to the screenshot directory, with timestamp.         #
+# Sends a notification to indicate success/failure.    #
+# -----------------------------------------------------#
+
+dir="$HOME/screenshots"
+mkdir -p "$dir"
+file="$dir/$(date +%Y%m%d-%H%M%S).png"
+
+if xclip -selection clipboard -t image/png -o > "$file"; then
+    notify-send "Screenshot saved" "$file"
+else
+    notify-send "Screenshot error" "No image in clipboard?"
+fi
+

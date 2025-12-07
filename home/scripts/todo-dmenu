@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+#------------------------------------------------------#
+# DMENU script to quickly fuzzy find notes.            #
+# -----------------------------------------------------#
+
+DIR="$HOME/notes"
+FILE="$DIR/todo.md"
+mkdir -p "$DIR"
+
+"${TERMINAL: -st}" -e "${EDITOR:-vim}" "$FILE"

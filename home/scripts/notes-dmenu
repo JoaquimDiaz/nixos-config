@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+#------------------------------------------------------#
+# DMENU script to quickly fuzzy find notes.            #
+# -----------------------------------------------------#
+
+DIR="$HOME/notes"
+mkdir -p "$DIR"
+
+CHOICE=$(find "$DIR" -maxdepth 3 -type f \
+    | sed "s|$DIR/||" \
+    | dmenu -i -l 15 -p "notes:")
+
+[ -z "$CHOICE" ] && exit 0
+
+"${TERMINAL: -st}" -e "${EDITOR:-vim}" "$DIR/$CHOICE"

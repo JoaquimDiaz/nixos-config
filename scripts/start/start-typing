@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+browser="firefox"
+
+"$browser" \
+    https://monkeytype.com \
+    https://www.speedtyper.dev \
+    https://www.typingstudy.com/numeric_keypad &
+
+disown
+kill -TERM "$PPID"
