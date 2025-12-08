@@ -4,6 +4,7 @@
   # Networking / wifi control
   networking.networkmanager.enable = true;
   networking.networkmanager.wifi.backend = "iwd";
+  networking.wireless.iwd.enable = true;
 
   # Bluetooth
   hardware.bluetooth.enable = true;
