@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-browser="firefox"
+browser="brave"
 
 $browser \
     https://github.com/AURA-AI-FR \
