@@ -13,6 +13,7 @@ let
     nvim = "nvim";
     alacritty = "alacritty";
     dunst = "dunst";
+    tmux = "tmux";
   };
 in
 {

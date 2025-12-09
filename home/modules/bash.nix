@@ -7,16 +7,21 @@ in
   programs.bash = {
     enable = true;
     shellAliases = {
+      tmux = "tmux -f ~/.config/tmux/tmux.conf";
+      vi = "nvim";
+      vim = "nvim";
       nrs = "sudo nixos-rebuild switch --flake ${configDir}?submodules=1#${laptop}";
       nrs-vm = "sudo nixos-rebuild build-vm --flake ${configDir}?submodules=1#${laptop}";
       hmb = "home-manager -f ${configDir}/home.nix switch";
       btw = "echo i use nixos, btw";
       # fzf aliases
       f = "cd $(fd --type d --hidden --exclude .git --exclude .cache --exclude .venv --exclude .npm --exclude .mozilla | fzf)";
-      v = ''vim "$(fd --hidden --type f \
-        --exclude .vim \
-        --exclude .git --exclude .cache --exclude .venv --exclude .npm --exclude .mozilla \
-        | fzf --preview "bat --style=numbers --color=always {}")"''; 
+      v = ''
+        nvim "$(fd --hidden --type f \
+          --exclude .vim \
+          --exclude .git --exclude .cache --exclude .venv --exclude .npm --exclude .mozilla \
+          | fzf --preview "bat --style=numbers --color=always {}")"
+      ''; 
       rgf = ''
         vim $(rg --line-number --hidden --glob '!.git' . \
           | fzf --delimiter ':' \
