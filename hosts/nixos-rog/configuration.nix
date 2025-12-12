@@ -4,6 +4,7 @@
     [
       ./hardware-configuration.nix
       ./nvidia-config.nix
+      ./vpn.nix
       "${self}/modules/bootloader.nix"
       "${self}/modules/common.nix"
       "${self}/modules/window-manager.nix"
