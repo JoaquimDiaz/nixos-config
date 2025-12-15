@@ -6,6 +6,8 @@ pkgs.mkShell {
   buildInputs = [
     pkgs.uv
     pkgs.python312
+    pkgs.python3Packages.ipython
+    pkgs.python3Packages.jupytext
     pkgs.postgresql
     pkgs.postgresql.pg_config
   ];

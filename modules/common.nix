@@ -41,6 +41,8 @@
     btop
     pulseaudio # used for pactl 
 
+    vscodium
+
     #image viewer
     imv
 

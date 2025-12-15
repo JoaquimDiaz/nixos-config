@@ -5,6 +5,8 @@ pkgs.mkShell {
   name = "py313";
   buildInputs = [
     pkgs.python313
+    pkgs.python3Packages.ipython
+    pkgs.python3Packages.jupytext
   ];
 
   env.LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [

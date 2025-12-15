@@ -5,6 +5,8 @@ pkgs.mkShell {
   name = "py313-psql";
   buildInputs = [
     pkgs.python313
+    pkgs.python3Packages.ipython
+    pkgs.python3Packages.jupytext
     pkgs.postgresql
     pkgs.postgresql.pg_config
   ];
