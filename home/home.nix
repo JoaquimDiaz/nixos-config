@@ -78,6 +78,7 @@ in
     lua-language-server
     nodePackages.typescript-language-server
     nodePackages.typescript
+    tree-sitter
   ];
 }
 
