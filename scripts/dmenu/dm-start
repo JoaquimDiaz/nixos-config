@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+START_DIR="$HOME/nixos-config/scripts/start"
+
+SELECTION=$(\
+  find "$START_DIR" -maxdepth 1 -type f -executable -printf "%f\n" \
+  | dmenu -fn "JetBrainsMono Nerd Font:size=18" -i)
+
+[ -z "$SELECTION" ] && exit 0
+
+"$START_DIR/$SELECTION" >/dev/null 2>&1 & disown

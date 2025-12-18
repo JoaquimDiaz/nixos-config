@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+QUERY=$(printf "" | dmenu -fn "JetBrainsMono Nerd Font:size=18" -i -p "Search: ")
+
+[ -z "$QUERY" ] && exit 0
+
+# echo "$QUERY"
+brave --new-window "https://search.brave.com/search?q=${QUERY// /+}"
