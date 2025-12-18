@@ -4,9 +4,10 @@
 [submodule "config/dmenu"]
 	path = config/dmenu
 	url = git@github.com:JoaquimDiaz/dmenu.git
-[submodule "config/nvim"]
-	path = config/nvim
-	url = git@github.com:JoaquimDiaz/nvim.git
 [submodule "config/slock"]
 	path = config/slock
 	url = git@github.com:JoaquimDiaz/slock.git
+[submodule "config/nvim"]
+	path = config/nvim
+	url = git@github.com:JoaquimDiaz/nvim-mini.git
+	branch = my_config
