@@ -39,7 +39,7 @@
     firefox
     brave
     btop
-    pulseaudio # used for pactl 
+    pulseaudio # used for pactl
 
     vscodium
 

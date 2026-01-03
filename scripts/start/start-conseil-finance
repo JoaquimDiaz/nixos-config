@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+browser="brave"
+
+$browser --new-window\
+    https://drive.google.com/drive/folders/1M4XNrFTe3NGZyp1TPE5JQTbJ3y_7DjXu
+    https://github.com/AURA-AI-FR/conseil-finance-chat \
+    https://n8n.aura-ai.fr/home/workflows &
